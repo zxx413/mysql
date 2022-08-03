@@ -1,30 +1,30 @@
-#•\ì¬
+#ï¿½\ï¿½ì¬
 CREATE TABLE students(stu_id int, sex VARCHAR(1), name VARCHAR(20), course VARCHAR(20), score int);
 
-#ƒf[ƒ^“ü—Í
-INSERT INTO students VALUES(001, '’j', '’·‰ªˆê”n', 'š Œê', 30);
-INSERT INTO students VALUES(001, '’j', '’·‰ªˆê”n', '‰pŒê', 30);
-INSERT INTO students VALUES(002, '—', '’†–{’m‰À', 'š Œê', 70);
-INSERT INTO students VALUES(002, '—', '’†–{’m‰À', '”Šw', 80);
-INSERT INTO students VALUES(003, '’j', '¼–{‹`•¶', '—‰È', 92);
-INSERT INTO students VALUES(003, '’j', '¼–{‹`•¶', 'ŽÐ‰ï', 90);
-INSERT INTO students VALUES(004, '—', '²’|—F', '—‰È', 35);
-INSERT INTO students VALUES(004, '—', '²’|—F', '‰pŒê', 22);
+#ï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½
+INSERT INTO students VALUES(001, 'ï¿½j', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½n', 'ï¿½ï¿½ï¿½ï¿½', 30);
+INSERT INTO students VALUES(001, 'ï¿½j', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½n', 'ï¿½pï¿½ï¿½', 30);
+INSERT INTO students VALUES(002, 'ï¿½ï¿½', 'ï¿½ï¿½ï¿½{ï¿½mï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½', 70);
+INSERT INTO students VALUES(002, 'ï¿½ï¿½', 'ï¿½ï¿½ï¿½{ï¿½mï¿½ï¿½', 'ï¿½ï¿½ï¿½w', 80);
+INSERT INTO students VALUES(003, 'ï¿½j', 'ï¿½ï¿½ï¿½{ï¿½`ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½', 92);
+INSERT INTO students VALUES(003, 'ï¿½j', 'ï¿½ï¿½ï¿½{ï¿½`ï¿½ï¿½', 'ï¿½Ð‰ï¿½', 90);
+INSERT INTO students VALUES(004, 'ï¿½ï¿½', 'ï¿½ï¿½ï¿½|ï¿½Fï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½', 35);
+INSERT INTO students VALUES(004, 'ï¿½ï¿½', 'ï¿½ï¿½ï¿½|ï¿½Fï¿½ï¿½', 'ï¿½pï¿½ï¿½', 22);     
 
-#‹³‰È‚Å‚à30“_ˆÈ‰º‚Ì“_”‚ðŽæ‚Á‚½¶“k‚Ì–¼‘O‚ðˆêæT‚Å•\Ž¦‚·‚é
+#ï¿½ï¿½ï¿½È‚Å‚ï¿½30ï¿½_ï¿½È‰ï¿½ï¿½Ì“_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½kï¿½Ì–ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Å•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 SELECT * FROM students WHERE score<30;
 
-#‘ŒêŽQ‰Á‚³‚ê‚½Šw¶‚ðˆêæT‚Å•\Ž¦‚·‚é
-SELECT * FROM students WHERE course='š Œê';
+#ï¿½ï¿½ï¿½ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Å•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SELECT * FROM students WHERE course='ï¿½ï¿½ï¿½ï¿½';
 
-#—‰È‚Ü‚½‚Í”Šw‚ÌƒeƒXƒg‚ðŽQ‰Á‚³‚ê‚½Šw¶‚ðˆêæT‚Å•\Ž¦‚·‚é
-SELECT * FROM students WHERE course='—‰È' OR course='”Šw';
+#ï¿½ï¿½ï¿½È‚Ü‚ï¿½ï¿½Íï¿½ï¿½wï¿½Ìƒeï¿½Xï¿½gï¿½ï¿½ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Å•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SELECT * FROM students WHERE course='ï¿½ï¿½ï¿½ï¿½' OR course='ï¿½ï¿½ï¿½w';
 
-#‰pŒêƒeƒXƒgŽQ‰Á‚³‚ê‚Ä‚È‚¢Šw¶‚ðˆêæT‚Å•\Ž¦‚·‚é
-SELECT * FROM students WHERE course<>'‰pŒê' ;
+#ï¿½pï¿½ï¿½eï¿½Xï¿½gï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚È‚ï¿½ï¿½wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Å•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SELECT * FROM students WHERE course<>'ï¿½pï¿½ï¿½' ;
 
-#“_”‚ð‚‚¢‡”Ô‚Å•\Ž¦‚·‚é
+#ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô‚Å•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 SELECT * FROM students ORDER BY score DESC;
 
-#‚·‚×‚Å‚Ì‰È–ÚƒeƒXƒg‚ðŽQ‰Á‚µ‚½l”‚ð•\Ž¦‚·‚é
-SELECT * FROM students WHERE course='š Œê' AND course='‰pŒê' AND course='—‰È' AND course='”Šw' AND course='ŽÐ‰ï';
+#ï¿½ï¿½ï¿½×‚Å‚Ì‰È–Úƒeï¿½Xï¿½gï¿½ï¿½ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SELECT * FROM students WHERE course='ï¿½ï¿½ï¿½ï¿½' AND course='ï¿½pï¿½ï¿½' AND course='ï¿½ï¿½ï¿½ï¿½' AND course='ï¿½ï¿½ï¿½w' AND course='ï¿½Ð‰ï¿½';
